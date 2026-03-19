@@ -1,0 +1,35 @@
+name: iOSCrackme
+options:
+  bundleIdPrefix: com.crackme
+  deploymentTarget:
+    iOS: "15.0"
+  xcodeVersion: "15.0"
+
+targets:
+  iOSCrackme:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: iOSCrackme
+        excludes:
+          - "**/*.md"
+    info:
+      path: iOSCrackme/Resources/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.crackme.iOSCrackme
+        SWIFT_VERSION: 5.0
+        CODE_SIGN_IDENTITY: ""
+        CODE_SIGNING_REQUIRED: NO
+        CODE_SIGNING_ALLOWED: NO
+        GCC_OPTIMIZATION_LEVEL: s          # release-style opts for RE realism
+        ENABLE_BITCODE: NO
+        ONLY_ACTIVE_ARCH: NO
+        ARCHS: arm64
+        DEBUG_INFORMATION_FORMAT: dwarf-with-dsym
+      configs:
+        Debug:
+          GCC_PREPROCESSOR_DEFINITIONS: DEBUG=1
+        Release:
+          GCC_PREPROCESSOR_DEFINITIONS: NDEBUG=1
