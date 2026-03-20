@@ -1,4 +1,5 @@
 #import "AntiDebug.h"
+#import <dlfcn.h>
 #import <sys/sysctl.h>
 #import <sys/types.h>
 #import <unistd.h>
