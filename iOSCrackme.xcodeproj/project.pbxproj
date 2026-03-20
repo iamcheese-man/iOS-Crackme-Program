@@ -12,7 +12,6 @@
 		A103 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* ViewController.m */; };
 		A104 /* KeyValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* KeyValidator.m */; };
 		A105 /* AntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* AntiDebug.m */; };
-		A106 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A006 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,7 +161,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A106 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
