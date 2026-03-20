@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A101 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A001 /* main.m */; };
+		A102 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A002 /* AppDelegate.m */; };
+		A103 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* ViewController.m */; };
+		A104 /* KeyValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* KeyValidator.m */; };
+		A105 /* AntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* AntiDebug.m */; };
+		A106 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A006 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A000 /* iOSCrackme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCrackme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A002 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A002H /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A003 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A003H /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A004 /* KeyValidator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyValidator.m; sourceTree = "<group>"; };
+		A004H /* KeyValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValidator.h; sourceTree = "<group>"; };
+		A005 /* AntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiDebug.m; sourceTree = "<group>"; };
+		A005H /* AntiDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntiDebug.h; sourceTree = "<group>"; };
+		A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A030 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				A031 /* iOSCrackme */,
+				A032 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A031 /* iOSCrackme */ = {
+			isa = PBXGroup;
+			children = (
+				A001 /* main.m */,
+				A002H /* AppDelegate.h */,
+				A002 /* AppDelegate.m */,
+				A040 /* Views */,
+				A041 /* Validation */,
+				A042 /* AntiDebug */,
+				A043 /* Resources */,
+			);
+			path = iOSCrackme;
+			sourceTree = "<group>";
+		};
+		A032 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A000 /* iOSCrackme.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A040 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A003H /* ViewController.h */,
+				A003 /* ViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A041 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				A004H /* KeyValidator.h */,
+				A004 /* KeyValidator.m */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		A042 /* AntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				A005H /* AntiDebug.h */,
+				A005 /* AntiDebug.m */,
+			);
+			path = AntiDebug;
+			sourceTree = "<group>";
+		};
+		A043 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A006 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A050 /* iOSCrackme */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A060 /* Build configuration list for PBXNativeTarget "iOSCrackme" */;
+			buildPhases = (
+				A021 /* Sources */,
+				A020 /* Frameworks */,
+				A022 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSCrackme;
+			productName = iOSCrackme;
+			productReference = A000 /* iOSCrackme.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A070 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A050 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A061 /* Build configuration list for PBXProject "iOSCrackme" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A030;
+			productRefGroup = A032 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A050 /* iOSCrackme */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A106 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A021 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A101 /* main.m in Sources */,
+				A102 /* AppDelegate.m in Sources */,
+				A103 /* ViewController.m in Sources */,
+				A104 /* KeyValidator.m in Sources */,
+				A105 /* AntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A080 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iOSCrackme/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crackme.iOSCrackme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A081 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				INFOPLIST_FILE = iOSCrackme/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crackme.iOSCrackme;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A082 /* Debug (Project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A083 /* Release (Project) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A060 /* Build configuration list for PBXNativeTarget "iOSCrackme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A080 /* Debug */,
+				A081 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A061 /* Build configuration list for PBXProject "iOSCrackme" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A082 /* Debug (Project) */,
+				A083 /* Release (Project) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = A070 /* Project object */;
+}
