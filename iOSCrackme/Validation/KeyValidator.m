@@ -10,7 +10,7 @@
 //   for each char c at position i: blob[i] = (uint8_t)(c ^ (0xAB + i))
 // ---------------------------------------------------------------------------
 static const uint8_t kTargetBlob[] = {
-    0xDC, 0xBD, 0x98, 0xEF, 0xF0, 0xA1, 0xC2, 0xE3, 0xB4, 0xDB, 0xFC, 0x9D, 0xCE
+    0x9C, 0xEA, 0x9E, 0xEF, 0x82, 0xE8, 0x88, 0xE8, 0x81, 0x99, 0xFE, 0x82, 0xE6
 };
 static const NSUInteger kBlobLen = 13;
 
@@ -44,7 +44,7 @@ static uint32_t rollingHash(NSString *s) {
 // Stage 1 — Length must be exactly 18 characters
 // ---------------------------------------------------------------------------
 + (BOOL)stage1_length:(NSString *)key {
-    return key.length == 18;
+    return key.length == 17;
 }
 
 // ---------------------------------------------------------------------------
@@ -77,7 +77,7 @@ static uint32_t rollingHash(NSString *s) {
     for (NSUInteger i = 0; i < key.length; i += 2) {
         sum += (uint8_t)[key characterAtIndex:i];
     }
-    return (sum == 0x2F6); // 758 decimal
+    return (sum == 0x242);
 }
 
 // ---------------------------------------------------------------------------
@@ -98,7 +98,7 @@ static uint32_t rollingHash(NSString *s) {
 // ---------------------------------------------------------------------------
 + (BOOL)stage5_rollingHash:(NSString *)key {
     uint32_t h = rollingHash(key);
-    return (h == 0x4E2A1CF7u);
+    return (h == 0x7DB85890u);
 }
 
 @end
