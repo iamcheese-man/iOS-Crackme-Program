@@ -53,12 +53,11 @@ static uint32_t rollingHash(NSString *s) {
 // ---------------------------------------------------------------------------
 + (BOOL)stage2_structure:(NSString *)key {
     if (![[key substringToIndex:3] isEqualToString:@"CM-"]) return NO;
-    if ([key characterAtIndex:6]  != '-') return NO;
-    if ([key characterAtIndex:11] != '-') return NO;
+    if ([key characterAtIndex:7]  != '-') return NO;
+    if ([key characterAtIndex:12] != '-') return NO;
 
-    // Remaining chars (non-dash, non-prefix) must be alphanumeric uppercase or digit
     NSCharacterSet *allowed = [NSCharacterSet alphanumericCharacterSet];
-    NSArray<NSNumber *> *skipIdx = @[@0, @1, @2, @6, @11];
+    NSArray<NSNumber *> *skipIdx = @[@0, @1, @2, @7, @12];
     for (NSUInteger i = 3; i < key.length; i++) {
         BOOL skip = NO;
         for (NSNumber *idx in skipIdx) if (idx.unsignedIntegerValue == i) { skip = YES; break; }
