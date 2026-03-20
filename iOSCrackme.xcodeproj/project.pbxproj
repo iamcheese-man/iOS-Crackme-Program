@@ -12,6 +12,8 @@
 		A103 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A003 /* ViewController.m */; };
 		A104 /* KeyValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A004 /* KeyValidator.m */; };
 		A105 /* AntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = A005 /* AntiDebug.m */; };
+		A107 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A007 /* UIKit.framework */; };
+		A108 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A008 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A005 /* AntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiDebug.m; sourceTree = "<group>"; };
 		A005H /* AntiDebug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AntiDebug.h; sourceTree = "<group>"; };
 		A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A007 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A008 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A107 /* UIKit.framework in Frameworks */,
+				A108 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,7 @@
 			children = (
 				A031 /* iOSCrackme */,
 				A032 /* Products */,
+				A033 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,15 @@
 				A000 /* iOSCrackme.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A033 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A007 /* UIKit.framework */,
+				A008 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A040 /* Views */ = {
