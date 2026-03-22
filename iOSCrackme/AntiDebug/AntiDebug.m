@@ -4,10 +4,6 @@
 #import <sys/types.h>
 #import <unistd.h>
 
-// ---------------------------------------------------------------------------
-// Internal helper — returns YES if a debugger is currently attached
-// using sysctl kinfo_proc P_TRACED inspection.
-// ---------------------------------------------------------------------------
 static BOOL isBeingDebugged(void) {
     int mib[4] = { CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid() };
     struct kinfo_proc info;
@@ -42,7 +38,7 @@ static void triggerTamperResponse(void) {
         pt(31 /*PT_DENY_ATTACH*/, 0, 0, 0);
     }
 #endif
-    // Immediate check after deny-attach
+    //  check after deny-attach
     if (isBeingDebugged()) {
         triggerTamperResponse();
     }
