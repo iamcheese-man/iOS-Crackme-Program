@@ -21,7 +21,7 @@
 - (void)setupUI {
     self.view.backgroundColor = [UIColor colorWithRed:0.05 green:0.05 blue:0.08 alpha:1.0];
 
-    // Title
+    // title
     self.titleLabel = [[UILabel alloc] init];
     self.titleLabel.text = @"CRACKME";
     self.titleLabel.font = [UIFont monospacedSystemFontOfSize:32 weight:UIFontWeightBold];
@@ -30,7 +30,7 @@
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.titleLabel];
 
-    // Subtitle
+    // subtitle
     self.subtitleLabel = [[UILabel alloc] init];
     self.subtitleLabel.text = @"Find the key. Prove yourself.";
     self.subtitleLabel.font = [UIFont monospacedSystemFontOfSize:13 weight:UIFontWeightRegular];
@@ -39,7 +39,7 @@
     self.subtitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
     [self.view addSubview:self.subtitleLabel];
 
-    // Key input field
+    // key input field
     self.keyField = [[UITextField alloc] init];
     self.keyField.placeholder = @"Enter key...";
     self.keyField.attributedPlaceholder = [[NSAttributedString alloc]
@@ -57,14 +57,14 @@
     self.keyField.returnKeyType = UIReturnKeyDone;
     self.keyField.translatesAutoresizingMaskIntoConstraints = NO;
 
-    // Padding
+    // padding
     UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 16, 0)];
     self.keyField.leftView = paddingView;
     self.keyField.leftViewMode = UITextFieldViewModeAlways;
 
     [self.view addSubview:self.keyField];
 
-    // Submit button
+    // submit button
     self.submitButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.submitButton setTitle:@"VALIDATE" forState:UIControlStateNormal];
     self.submitButton.titleLabel.font = [UIFont monospacedSystemFontOfSize:15 weight:UIFontWeightBold];
@@ -75,7 +75,7 @@
     [self.submitButton addTarget:self action:@selector(validateKey) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.submitButton];
 
-    // Status label
+    // status label
     self.statusLabel = [[UILabel alloc] init];
     self.statusLabel.text = @"";
     self.statusLabel.font = [UIFont monospacedSystemFontOfSize:14 weight:UIFontWeightMedium];
@@ -84,7 +84,7 @@
     self.statusLabel.numberOfLines = 0;
     [self.view addSubview:self.statusLabel];
 
-    // Layout
+    // layout
     [NSLayoutConstraint activateConstraints:@[
         [self.titleLabel.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor],
         [self.titleLabel.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:80],
