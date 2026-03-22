@@ -1,22 +1,15 @@
 #import "KeyValidator.h"
 #import <CommonCrypto/CommonDigest.h>
 
-// ---------------------------------------------------------------------------
 // Obfuscated target blob (XOR-encoded expected transform of the key internals)
-// Key answer: "CM-7F3A-X9Z2-K4Q8"  (don't put this in plaintext anywhere else)
+// The Answer: "CM-7F3A-X9Z2-K4Q8" 
 //
-// How it's derived:
-//   inner = chars at indices 3..14 of the key = "7F3A-X9Z2-K4Q"
-//   for each char c at position i: blob[i] = (uint8_t)(c ^ (0xAB + i))
 // ---------------------------------------------------------------------------
 static const uint8_t kTargetBlob[] = {
     0x9C, 0xEA, 0x9E, 0xEF, 0x82, 0xE8, 0x88, 0xE8, 0x81, 0x99, 0xFE, 0x82, 0xE6
 };
 static const NSUInteger kBlobLen = 13;
 
-// ---------------------------------------------------------------------------
-// Rolling hash constant
-// ---------------------------------------------------------------------------
 static uint32_t rollingHash(NSString *s) {
     uint32_t h = 0x811C9DC5u; // FNV-1a seed
     for (NSUInteger i = 0; i < s.length; i++) {
@@ -41,15 +34,15 @@ static uint32_t rollingHash(NSString *s) {
 }
 
 // ---------------------------------------------------------------------------
-// Stage 1 — Length must be exactly 18 characters
+// Stage 1 — 18 length char check
 // ---------------------------------------------------------------------------
 + (BOOL)stage1_length:(NSString *)key {
     return key.length == 17;
 }
 
 // ---------------------------------------------------------------------------
-// Stage 2 — Structural pattern: CM-XXXX-XXXX-XXXX
-//           Prefix "CM-", dashes at indices 6 and 11
+// Stage 2 — structural pattern: CM-XXXX-XXXX-XXXX
+//           prefix "CM-", dashes at indices 6 and 11
 // ---------------------------------------------------------------------------
 + (BOOL)stage2_structure:(NSString *)key {
     if (![[key substringToIndex:3] isEqualToString:@"CM-"]) return NO;
@@ -69,7 +62,7 @@ static uint32_t rollingHash(NSString *s) {
 }
 
 // ---------------------------------------------------------------------------
-// Stage 3 — Checksum: sum of ASCII values of chars at even indices == 0x2F6
+// Stage 3 — checksum: sum of ASCII values of chars at even indices == 0x2F6
 // ---------------------------------------------------------------------------
 + (BOOL)stage3_checksum:(NSString *)key {
     NSUInteger sum = 0;
@@ -80,7 +73,7 @@ static uint32_t rollingHash(NSString *s) {
 }
 
 // ---------------------------------------------------------------------------
-// Stage 4 — XOR blob: inner 13 chars (indices 3..15) XORed with (0xAB + i)
+// Stage 4 — xor blob: inner 13 chars (indices 3..15) XORed with (0xAB + i)
 //           must match kTargetBlob
 // ---------------------------------------------------------------------------
 + (BOOL)stage4_xorBlob:(NSString *)key {
@@ -93,7 +86,7 @@ static uint32_t rollingHash(NSString *s) {
 }
 
 // ---------------------------------------------------------------------------
-// Stage 5 — Rolling hash of the full key must equal 0x4E2A1CF7
+// Stage 5 — rolling hash of the full key must equal 0x4E2A1CF7
 // ---------------------------------------------------------------------------
 + (BOOL)stage5_rollingHash:(NSString *)key {
     uint32_t h = rollingHash(key);
