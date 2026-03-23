@@ -6,7 +6,7 @@ No jailbreak required — sideload via AltStore / TrollStore / LiveContainer.
 ---
 ## Direct (OTA) Installation without Sideloading Tools
 
-(Install iOS Crackme)[itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/iamcheese-man/IPA-Distribution/main/iOSCrackmeOTA.plist]
+[Install iOS Crackme](itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/iamcheese-man/IPA-Distribution/main/iOSCrackmeOTA.plist)
 
 ! `This app is signed using an Enterprise certificate. Certificate can be revoked anytime by Apple.` !
 
