@@ -10,6 +10,8 @@ Open this link on Safari:
 
 - [Install iOS Crackme](http://iamcheese-man.github.io/HTML/IGNORE/IGNORE01.html)
 
+After installing, go to Settings > General > VPN and Device Management > Trust the enterprise developer and you're ready to launch the app.
+
 ! `This app is signed using an Enterprise certificate. Certificate can be revoked anytime by Apple.` !
 
 ---
