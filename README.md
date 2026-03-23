@@ -6,9 +6,9 @@ No jailbreak required — sideload via AltStore / TrollStore / LiveContainer.
 ---
 ## Direct (OTA) Installation without Sideloading Tools
 
-- Open this link on Safari:
+Open this link on Safari:
 
-[Install iOS Crackme](http://iamcheese-man.github.io/HTML/IGNORE/IGNORE01.html)
+- [Install iOS Crackme](http://iamcheese-man.github.io/HTML/IGNORE/IGNORE01.html)
 
 ! `This app is signed using an Enterprise certificate. Certificate can be revoked anytime by Apple.` !
 
