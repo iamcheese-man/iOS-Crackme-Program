@@ -4,7 +4,11 @@ A multi-stage reverse engineering challenge for iOS (ARM64).
 No jailbreak required — sideload via AltStore / TrollStore / LiveContainer.
 
 ---
+## Direct (OTA) Installation without Sideloading Tools
 
+You can install the app at: itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/iamcheese-man/IPA-Distribution/main/iOSCrackmeOTA.plist
+
+! `This app is signed using an Enterprise certificate. Certificate can be revoked anytime by Apple.` !
 ## Objective
 
 Enter the correct key into the text field.  
