@@ -1,12 +1,12 @@
 # iOS Crackme
 
 A multi-stage reverse engineering challenge for iOS (ARM64).  
-No jailbreak required — sideload via AltStore / TrollStore / LiveContainer.
+No jailbreak required, sideload via AltStore / TrollStore / LiveContainer.
 
 ---
 ## Direct (OTA) Installation without Sideloading Tools
 
-Open this link on Safari:
+Open this link on any browser:
 
 - [Install iOS Crackme](http://iamcheese-man.github.io/HTML/IGNORE/IGNORE01.html)
 
