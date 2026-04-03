@@ -12,7 +12,7 @@ Open this link on any browser:
 
 After installing, go to Settings > General > VPN and Device Management > Trust the enterprise developer and you're ready to launch the app.
 
-! Certificate Status: `REVOKED` !
+! Certificate Status: `UNREVOKED, WORKING` !
 
 
 ! `This app is signed using an Enterprise certificate. Certificate can be revoked anytime by Apple.` !
